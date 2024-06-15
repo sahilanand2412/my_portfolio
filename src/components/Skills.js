@@ -38,15 +38,14 @@ export const Skills = () => {
     },
   };
   return (
-    <section className="skill" id="skills">
+    <section className="skill" id="skills" >
       <Container>
         <Row>
           <Col>
             <div className="skill-bx">
               <h5>Skills</h5>
               <p>
-                hbexgqgfxubxgegfbdfehfggregrygggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
-              </p>
+              "As a passionate full stack developer and UI/UX specialist, I create dynamic web experiences by blending aesthetic design with robust functionality. My expertise ensures high-performance, responsive, and scalable applications. Committed to continuous learning and effective collaboration, I deliver bespoke solutions that exceed client expectations and elevate user satisfaction."              </p>
               <Carousel responsive={responsive}  infinite={true} className="skill-slider">
                 <div className="item" >
                   <img src={html} alt ="Image" className="img-size"/>

@@ -74,9 +74,10 @@ const handleSubmit = async (e) => {
 {
    status .message &&
 
-<col>
+<Col>
 <p className={status.success === false ? "danger" :"success"}>{status.message}</p>
-</col>}
+</Col>
+}
         </Row>
     </form>
     </Col>

@@ -12,13 +12,14 @@ app.listen(5000, () => console.log("Server Running"));
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
-const contactEmail = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: "shristipriya1207@gmail.com",
-    pass: ""
-  },
-});
+var contactEmail = nodemailer.createTransport({
+    host: "sandbox.smtp.mailtrap.io",
+    port: 2525,
+    auth: {
+      user: "8bd51751ee3e0d",
+      pass: "49356c9261824f"
+    }
+  });
 
 contactEmail.verify((error) => {
   if (error) {
