@@ -1,40 +1,60 @@
 import { Col, Container, Row ,Tab} from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import css from "../assets/css.png"
-import html from "../assets/html.png"
+
 import { Nav } from "react-bootstrap";
 import Resume from "./Resume";
+import clone from "../assets/clone.png"
+import hotel from "../assets/hotel.png"
+import quiz from "../assets/quiz.png"
+import todo from "../assets/todo.png"
+import rock from "../assets/rock.png"
+
+
+
 export const Projects = () => {
   const projects = [
     {
-      title: "Business StartUp",
-      description: "abc",
-      imgUrl: css,
+      title: "website Clone",
+      description: "I've crafted a bespoke website clone, showcasing proficiency in React and Tailwind CSS.",
+      imgUrl: clone,
+      Sourse:"https://github.com/shristipriya1207/Clone_website",
+      output:""
     },
     {
-      title: "Business StartUp",
-      description: "abc",
-      imgUrl: html,
+      title: "Todo App",
+      description: "In the todo app, users can seamlessly add and delete tasks, enhancing productivity and user experience.",
+      imgUrl: todo,
+      Sourse:"https://github.com/shristipriya1207/Todo_app_React",
+      output:""
+    },
+    {
+      title: "Hotel Management",
+      description: " I implemented a comprehensive hotel booking system using HTML, CSS, and JavaScript, ensuring a seamless user experience.",
+      imgUrl: hotel,
+      Sourse:"https://github.com/shristipriya1207/Hotel_Management_project",
+      output:""
+    },
+    {
+      title: "Java quiz",
+      description: "I developed an interactive platform that automates quiz creation, management, and grading, leveraging Java for robust functionality and user-friendly experience.",
+      imgUrl: quiz,
+      Sourse:"https://github.com/shristipriya1207/java_quiz_project",
+      output:""
+    },
+   
+    {
+      title: "Rock Paper Scissor",
+      description: " I created a Rock, Paper, Scissors game using JavaScript, offering a fun and interactive experience with dynamic gameplay and user-friendly controls.",
+      imgUrl: rock,
+      Sourse:"https://github.com/shristipriya1207/Rock-Paper-Scissors-game",
+      output:""
     },
     // {
-    //   title: "Business StartUp",
+    //   title: "Rock Paper Scissor",
     //   description: "abc",
     //   imgUrl: " ",
-    // },
-    // {
-    //   title: "Business StartUp",
-    //   description: "abc",
-    //   imgUrl: " ",
-    // },
-    // {
-    //   title: "Business StartUp",
-    //   description: "abc",
-    //   imgUrl: " ",
-    // },
-    // {
-    //   title: "Business StartUp",
-    //   description: "abc",
-    //   imgUrl: " ",
+    // Sourse:"",
+    //   output:""
     // },
   ];
   return (
@@ -50,11 +70,11 @@ export const Projects = () => {
                 <Nav.Link eventKey="first">Projects</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="second">Experience</Nav.Link>
+                <Nav.Link eventKey="second">About</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="third">
-                  Resume
+                  Work
                 </Nav.Link>
               </Nav.Item>
             </Nav>

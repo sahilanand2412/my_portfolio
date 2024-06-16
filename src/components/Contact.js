@@ -50,7 +50,9 @@ const handleSubmit = async (e) => {
     <img src={img2} alt ="Contact"></img>
     </Col>
     <Col md={6}>
-    <h2>Get In Touch</h2>
+    <div className="h2_css">
+    <h2 >Get In Touch</h2>
+    </div>
     <form onSubmit={handleSubmit}>
         <Row>
             <Col sm={6} className="px-1">

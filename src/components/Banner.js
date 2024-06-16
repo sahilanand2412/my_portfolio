@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { FiArrowRightCircle } from "react-icons/fi";
-import img2 from "../assets/img2.jpg";
+import img2 from "../assets/profile.jpg";
 import { useState, useEffect } from "react";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -46,8 +46,9 @@ setDelta(500);
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi I'm `}<span className="name-css">Shristi Priya </span> {`From Bihar, India`} <span className="wrap">{text}</span>
+              {`Hi I'm `}<span className="name-css">Shristi Priya </span>  <span className="wrap">{text}</span> {`based in Bihar, India`}
             </h1>
+            
             <p>
             I bring a blend of creativity and technical expertise to my work, designing and developing websites that are both aesthetically pleasing and functionally superior
             </p>

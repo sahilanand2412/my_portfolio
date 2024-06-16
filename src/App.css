@@ -563,7 +563,7 @@ width:150px;
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #069851 -5.91%, #2fbdac 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -609,67 +609,93 @@ width:150px;
   z-index: -4;
 }
 
-
-
 .contact {
-  background: linear-gradient(90.21deg, #000514 -5.91%, #046751 111.58%);
-  padding: 60px 0 200px 0;
+  margin-left: 20%;
+  max-width: 1200px;
+  border-radius: 50px;
+  background-color: rgb(8, 8, 8);
+  padding: 60px 20px 200px 20px;
+  /* Add margin bottom to separate from other sections */
 }
+
 .contact img {
-  width: 92%;
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  animation: updown 3s linear infinite;
 }
+
 .contact h2 {
-	font-size: 45px;
-	font-weight: 700;
-  margin-bottom: 30px;
+  color: #65dfdb;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center; /* Center align heading on all screen sizes */
 }
-.contact form input, .contact form textarea {
+
+.contact form input,
+.contact form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
+  margin: 0 0 20px 0;
+  padding: 16px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
-.contact form input:focus, .contact form textarea:focus {
+
+.contact form input:focus,
+.contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
 }
-.contact form input::placeholder, .contact form textarea::placeholder {
-  font-size: 16px;
+
+.contact form input:hover,
+.contact form textarea:hover {
+  box-shadow: rgba(54, 232, 140, 0.35) 0px 5px 15px;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  font-size: 14px;
   font-weight: 400;
   color: #fff;
 }
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder {
   color: #121212;
   opacity: 0.8;
 }
+
 .contact form button {
   font-weight: 700;
   color: #000;
   background-color: #fff;
-  padding: 14px 48px;
-  font-size: 18px;
-  margin-top: 25px;
-  border-radius: 0;
+  padding: 12px 36px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 20px;
   position: relative;
   transition: 0.3s ease-in-out;
 }
+
 .contact form button span {
   z-index: 1;
   position: relative;
 }
+
 .contact form button:hover {
   color: #fff;
 }
+
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: linear-gradient(90.21deg, #04603b -5.91%, #034b49 111.58%);
   width: 0;
   height: 100%;
   position: absolute;
@@ -678,89 +704,107 @@ width:150px;
   z-index: 0;
   transition: 0.3s ease-in-out;
 }
+
 .contact form button:hover::before {
   width: 100%;
 }
 
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact {
+    margin-left: 5%;
+    padding: 40px 10px 120px 10px;
+  }
+
+  .contact h2 {
+    font-size: 30px;
+  }
+
+  .contact form button {
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin-left: 0;
+    border-radius: 0;
+    padding: 30px 10px 80px 10px;
+  }
+
+  .contact h2 {
+    font-size: 24px;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .contact form button {
+    padding: 10px 20px;
+  }
+}
+
 /* footer css
  */
- .footer {
+.footer {
   padding: 0 0 50px 0;
-  /* background-image: url('./assets/img/footer-bg.png'); */
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #000;
 }
-.newsletter-bx {
-  background: #FFFFFF;
-  border-radius: 55px;
-  color: #121212;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-}
-.newsletter-bx h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-}
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
-}
-.new-email-bx::after {
-  content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.new-email-bx input {
-  width: 100%;
-  color: #121212;
-  font-weight: 500;
-  background: transparent;
-  border: 0;
-  padding: 0 15px;
-}
-.new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 20px 65px;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 18px;
-}
-.footer img {
-  width: 26%;
-}
+
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #B8B8B8;
+  color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+.footer div {
+  max-height: 15px;
+  margin-left: 200px; /* Default margin */
+}
+
+@media screen and (max-width: 1200px) {
+  .footer div {
+    margin-left: 100px; /* Adjust margin for medium screens */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer div {
+    margin-left: 50px; /* Adjust margin for tablets and small screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-bottom: 30px; /* Reduce padding on smaller screens */
+  }
+  
+  .footer p {
+    font-size: 12px; /* Decrease font size for smaller screens */
+    margin-top: 10px; /* Adjust top margin */
+  }
+  
+  .footer div {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+  }
+}
+
 
 
 
@@ -768,7 +812,6 @@ width:150px;
 
 
 /* Resume css */
-
 .content-box {
   background-color: black;
   color: white;
@@ -783,7 +826,7 @@ width:150px;
 
 .desc p {
   margin-bottom: 15px;
-  border : 4px solid rgb(22, 113, 120);
+  border: 4px solid rgb(22, 113, 120);
 }
 
 .info-list {
@@ -805,12 +848,148 @@ width:150px;
 }
 
 .bts {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative; /* To position the image container */
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: rgb(202, 74, 209);
+  background: #ad5389;
+  background: linear-gradient(to right, #0e6489, #04704e, #24243e);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+  text-decoration: none;
+}
 
+.btn svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
 
+.btn span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
 
+.btn:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+.btn:hover span {
+  transform: translateX(7px);
+}
+
+.copied-msg {
+  color: green;
+  margin-top: 1rem;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block; /* Ensures the container wraps around the image */
+}
+
+.about-image {
+  display: block;
+  width: 600px; /* Adjust as per your design */
+  height: 600px; /* Maintain aspect ratio */
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth opacity and transform transition */
+}
+
+.image-overlay h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.image-overlay p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.image-overlay:hover {
+  opacity: 1; /* Show overlay on hover */
+  transform: translateY(-10px); /* Shift text upwards slightly */
+}
+
+.additional-images {
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between; /* Ensure images are evenly spaced */
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.additional-image-container {
+  position: relative;
+  width: 500px; /* Adjust width as needed */
+  height: 500px; /* Maintain aspect ratio */
+}
+
+.additional-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.additional-image-container .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth opacity and transform transition */
+}
+
+.additional-image-container .image-overlay h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.additional-image-container:hover .image-overlay {
+  opacity: 1; /* Show overlay on hover */
+  transform: translateY(-10px); /* Shift text upwards slightly */
+}
+
+.clear {
+  clear: both;
+}
 
 .copied-msg {
   color: white;
@@ -820,18 +999,34 @@ width:150px;
   vertical-align: middle; /* Align with button text */
 }
 
-.clear {
-  clear: both;
+.border-animation {
+  position: relative;
 }
 
+.border-animation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 10px solid transparent;
+  box-sizing: border-box;
+  pointer-events: none; /* Ensures the border overlay doesn't interfere with clicks */
+  animation: border-animation 2.5s linear infinite;
+}
 
-
-
-
-
-
-
-
+@keyframes border-animation {
+  0% {
+    border-color: rgba(95, 6, 100, 0.3);
+  }
+  50% {
+    border-color: rgba(128, 104, 237, 0.8);
+  }
+  100% {
+    border-color: rgba(136, 7, 35, 0.3);
+  }
+}
 
 
 /*

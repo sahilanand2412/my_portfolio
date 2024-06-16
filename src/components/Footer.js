@@ -12,17 +12,14 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          {/* <MailchimpForm /> */}
-          <Col size={12} sm={6}>
-            <img src={img} alt="Logo" />
-          </Col>
+         
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><CiLinkedin /></a>
-              <a href="#"><MdOutlineMailLock /></a>
-              <a href="#"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/shristi-priya/"><CiLinkedin /></a>
+              {/* <a href="#"><MdOutlineMailLock /></a> */}
+              <a href="https://github.com/shristipriya1207"><FaGithub /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Copyright 2024. Shristi Priya</p>
           </Col>
         </Row>
       </Container>

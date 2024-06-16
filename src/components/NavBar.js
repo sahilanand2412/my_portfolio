@@ -50,11 +50,12 @@ setActiveLink(value);
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-                <a href="#" className='icon-bg'><CiLinkedin /></a>
-                <a href="#"><MdOutlineAttachEmail /></a>
-                <a href="#"><FaGithub /></a>
+                <a href="https://www.linkedin.com/in/shristi-priya/" className='icon-bg'><CiLinkedin /></a>
+                {/* <a href="https://www.shristipriya1207@gmail.com"><MdOutlineAttachEmail /></a> */}
+                <a href="https://github.com/shristipriya1207"><FaGithub /></a>
                 </div>
                 <button className='vvd' onClick={()=>console.log('connect')}>
+                    
                     <span>lets connect</span>
                 </button>
           </span>
