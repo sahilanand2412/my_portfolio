@@ -56,7 +56,7 @@ setActiveLink(value);
                 </div>
                 <button className='vvd'>
                     
-                    <a href='#connect'>lets connect</a>
+                    <a href='#connect' style={{ color: 'white', textDecoration: 'none' }} >lets connect</a>
                 </button>
           </span>
         </Navbar.Collapse>

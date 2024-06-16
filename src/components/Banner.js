@@ -52,8 +52,8 @@ setDelta(500);
             <p>
             I bring a blend of creativity and technical expertise to my work, designing and developing websites that are both aesthetically pleasing and functionally superior
             </p>
-            <button className="btn3" onClick={() => console.log("connect")}>
-              Lets connect
+            <button className="btn3" >
+            <a href='#connect' style={{ color: 'white', textDecoration: 'none' }} >lets connect</a>              
               <FiArrowRightCircle size={25} />
             </button>
           </Col>
