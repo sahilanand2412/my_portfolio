@@ -54,9 +54,9 @@ setActiveLink(value);
                 {/* <a href="https://www.shristipriya1207@gmail.com"><MdOutlineAttachEmail /></a> */}
                 <a href="https://github.com/shristipriya1207"><FaGithub /></a>
                 </div>
-                <button className='vvd' onClick={()=>console.log('connect')}>
+                <button className='vvd'>
                     
-                    <span>lets connect</span>
+                    <a href='#connect'>lets connect</a>
                 </button>
           </span>
         </Navbar.Collapse>
