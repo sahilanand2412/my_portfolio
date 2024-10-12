@@ -11,7 +11,7 @@ const Resume = () => {
 
   const copyEmailToClipboard = () => {
     const textarea = document.createElement('textarea');
-    textarea.value = 'shristipriya1207@gmail.com';
+    textarea.value = 'sahilanand705@gmail.com';
     textarea.setAttribute('readonly', '');
     textarea.style.position = 'absolute';
     textarea.style.left = '-9999px';
@@ -42,8 +42,8 @@ const Resume = () => {
 
         <div className="info-list">
           <ul>
-            <li><strong><FaPhoneSquare className="icon" /></strong> 6200685948</li>
-            <li><strong><MdOutlineEmail className="icon" /></strong> shristipriya1207@gmail.com</li>
+            <li><strong><FaPhoneSquare className="icon" /></strong> 8581878294</li>
+            <li><strong><MdOutlineEmail className="icon" /></strong> sahilanand705@gmail.com</li>
           </ul>
         </div>
 

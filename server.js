@@ -16,8 +16,8 @@ var contactEmail = nodemailer.createTransport({
     host: "sandbox.smtp.mailtrap.io",
     port: 2525,
     auth: {
-      user: "a9b1ecf5994626",
-      pass: "2fb10bb5048949"
+      user: "ef7c3094528214",
+      pass: "2bd1b76a6d6822"
     }
   });
 
@@ -36,7 +36,7 @@ router.post("/contact", (req, res) => {
   const phone = req.body.phone;
   const mail = {
     from: name,
-    to: "shristipriya1207@gmail.com",
+    to: "sahilanand705@gmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>

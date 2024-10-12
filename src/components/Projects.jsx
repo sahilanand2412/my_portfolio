@@ -3,10 +3,10 @@ import { ProjectCard } from "./ProjectCard";
 
 import { Nav } from "react-bootstrap";
 import Resume from "./Resume";
-import clone from "../assets/clone.png"
+import clone from "../assets/clone.jpg"
 import hotel from "../assets/hotel.png"
-import quiz from "../assets/quiz.png"
-import todo from "../assets/todo.png"
+import quiz from "../assets/ECM.jpg"
+import todo from "../assets/amazon.jpg"
 import rock from "../assets/rock.png"
 
 
@@ -14,41 +14,41 @@ import rock from "../assets/rock.png"
 export const Projects = () => {
   const projects = [
     {
-      title: "website Clone",
-      description: "I've crafted a bespoke website clone, showcasing proficiency in React and Tailwind CSS.",
+      title: "Tomato Food Delivery ",
+      description: "Developed a food delivery website using React, featuring a dynamic food cart, an admin panel for product management, and seamless user interactions.",
       imgUrl: clone,
-      Sourse:"https://github.com/shristipriya1207/Clone_website",
+      Sourse:"https://github.com/sahilanand2412/Tomato_Food_Delivery",
       output:""
     },
     {
-      title: "Todo App",
-      description: "In the todo app, users can seamlessly add and delete tasks, enhancing productivity and user experience.",
+      title: "Amazon Clone",
+      description: "Built an Amazon clone using HTML and CSS, replicating the layout and design of the e-commerce platform to enhance UI development skills",
       imgUrl: todo,
-      Sourse:"https://github.com/shristipriya1207/Todo_app_React",
+      Sourse:"https://github.com/sahilanand2412/amazonClone",
       output:""
     },
     {
       title: "Hotel Management",
       description: " I implemented a comprehensive hotel booking system using HTML, CSS, and JavaScript, ensuring a seamless user experience.",
       imgUrl: hotel,
-      Sourse:"https://github.com/shristipriya1207/Hotel_Management_project",
+      Sourse:"https://github.com/sahilanand2412/hotelManagementSystem",
       output:""
     },
     {
       title: "Java quiz",
-      description: "I developed an interactive platform that automates quiz creation, management, and grading, leveraging Java for robust functionality and user-friendly experience.",
+      description: "Developed an election voting app using Android Studio, allowing users to vote securely and manage elections efficiently, with features like candidate listing and result tracking",
       imgUrl: quiz,
-      Sourse:"https://github.com/shristipriya1207/java_quiz_project",
+      Sourse:"https://github.com/sahilanand2412/ECM",
       output:""
     },
    
-    {
-      title: "Rock Paper Scissor",
-      description: " I created a Rock, Paper, Scissors game using JavaScript, offering a fun and interactive experience with dynamic gameplay and user-friendly controls.",
-      imgUrl: rock,
-      Sourse:"https://github.com/shristipriya1207/Rock-Paper-Scissors-game",
-      output:""
-    },
+    // {
+    //   title: "Rock Paper Scissor",
+    //   description: " I created a Rock, Paper, Scissors game using JavaScript, offering a fun and interactive experience with dynamic gameplay and user-friendly controls.",
+    //   imgUrl: rock,
+    //   Sourse:"https://github.com/sahilanand2412/Rock-Paper-Scissors-game",
+    //   output:""
+    // },
     // {
     //   title: "Rock Paper Scissor",
     //   description: "abc",
@@ -94,7 +94,7 @@ export const Projects = () => {
 
                 </Tab.Pane>
                 <Tab.Pane eventKey="second"> <Resume/></Tab.Pane>
-                <Tab.Pane eventKey="third"> third tab</Tab.Pane>
+                <Tab.Pane eventKey="third"> </Tab.Pane>
             </Tab.Content>
             </Tab.Container>
           </Col>

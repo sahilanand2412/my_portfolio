@@ -47,6 +47,14 @@ export const Skills = () => {
               <p>
               "As a passionate full stack developer and UI/UX specialist, I create dynamic web experiences by blending aesthetic design with robust functionality. My expertise ensures high-performance, responsive, and scalable applications. Committed to continuous learning and effective collaboration, I deliver bespoke solutions that exceed client expectations and elevate user satisfaction."              </p>
               <Carousel responsive={responsive}  infinite={true} className="skill-slider">
+              <div className="item" >
+                  <img src={java} alt ="Image" className="img-size"/>
+                  <h2>Java</h2>
+                </div>
+              <div className="item" >
+                  <img src={cplus} alt ="Image" className="img-size"/>
+                  <h2>c++</h2>
+                </div>               
                 <div className="item" >
                   <img src={html} alt ="Image" className="img-size"/>
                   <h2>HTML</h2>
@@ -66,14 +74,6 @@ export const Skills = () => {
                 <div className="item" >
                   <img src={c}  alt ="Image" className="img-size"/>
                   <h2>C</h2>
-                </div>
-                <div className="item" >
-                  <img src={cplus} alt ="Image" className="img-size"/>
-                  <h2>c++</h2>
-                </div>
-                <div className="item" >
-                  <img src={java} alt ="Image" className="img-size"/>
-                  <h2>Java</h2>
                 </div>
                 <div className="item" >
                   <img src={python} alt ="Image" className="img-size"/>
