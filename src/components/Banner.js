@@ -59,7 +59,7 @@ setDelta(500);
           </Col>
           <Col xs={12} md={6} xl={5}>
           <div className="block">
-            <img src={img2} alt="Header Img"></img>
+            <img src={img2} className="profileimage" alt="Header Img"></img>
             
             </div>
           </Col>

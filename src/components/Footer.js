@@ -9,7 +9,7 @@ import { MdOutlineMailLock } from "react-icons/md";
 
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer ">
       <Container>
         <Row className="align-items-center">
          
@@ -19,7 +19,6 @@ export const Footer = () => {
               {/* <a href="#"><MdOutlineMailLock /></a> */}
               <a href="https://github.com/sahilanand2412"><FaGithub /></a>
             </div>
-            <p>Copyright 2024. Sahil Anand</p>
           </Col>
         </Row>
       </Container>
