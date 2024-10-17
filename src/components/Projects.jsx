@@ -35,7 +35,7 @@ export const Projects = () => {
       output:""
     },
     {
-      title: "Java quiz",
+      title: "Voting App",
       description: "Developed an election voting app using Android Studio, allowing users to vote securely and manage elections efficiently, with features like candidate listing and result tracking",
       imgUrl: quiz,
       Sourse:"https://github.com/sahilanand2412/ECM",
