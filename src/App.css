@@ -45,6 +45,8 @@ img {
 .profileimage{
   border-radius: 50%;
   width: 25rem;
+  height: 25rem; /* Set height equal to width */
+  object-fit: cover;
 }
 @media (max-width:720px) {
 	 .profileimage {
